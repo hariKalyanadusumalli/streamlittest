@@ -46,8 +46,8 @@ inputs = {
 "age": age,
 "previous_year_rating": previous_year_rating,
 "length_of_service": length_of_service,
-"KPIs_met > 80%": KPIs_met_80,
-"awards_won ?": awards_won,
+"KPIs_met >80%": KPIs_met_80,
+"awards_won?": awards_won,
 "avg_training_score": avg_training_score
 }
 
@@ -61,7 +61,7 @@ if st.button('Predict'):
     X_input = pd.DataFrame(inputs,index=[0])
     prediction = model.predict(X_input)
     st.write("The Predicted Value is: ")
-    st.predction(prediction)
+    st.prediction(prediction)
 
 
 
