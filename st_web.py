@@ -61,7 +61,7 @@ if st.button('Predict'):
     X_input = pd.DataFrame(inputs,index=[0])
     prediction = model.predict(X_input)
     st.write("The Predicted Value is: ")
-    st.prediction(prediction)
+    st.write(prediction)
 
 
 
